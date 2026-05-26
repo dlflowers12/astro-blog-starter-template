@@ -12,52 +12,237 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header />
+
 		<main>
-			<section>
-				<h1>LeShea Group</h1>
-				<p>
-					A purpose-driven brand house created to educate, equip, inspire, and build meaningful platforms for growth.
+			<section class="hero">
+				<img src="/leshea-logo.png" alt="LeShea Group LLC Logo" class="logo" />
+
+				<p class="eyebrow">Education • Media • Leadership • Community Impact</p>
+
+				<h1>Building platforms for growth, purpose, and excellence.</h1>
+
+				<p class="hero-text">
+					LeShea Group is a purpose-driven brand house created to educate, equip, inspire,
+					and build meaningful experiences through classes, media, workshops, speaking,
+					community impact, and signature resources.
 				</p>
-				<p>
-					LeShea Group serves as the parent home for education, media, workshops, community impact, digital resources, and future creative ventures.
-				</p>
+
+				<div class="buttons">
+					<a href="/classes">Explore Classes</a>
+					<a href="/speaking">Book Speaking</a>
+					<a href="/contact">Contact Us</a>
+				</div>
 			</section>
 
-			<section>
-				<h2>Our Brand Family</h2>
-				<ul>
-					<li><strong>LeShea Academy:</strong> Classes, learning resources, professional development, and educational tools.</li>
-					<li><strong>LeShea Media:</strong> Podcasting, storytelling, digital media, and creative content.</li>
-					<li><strong>LeShea Foundation:</strong> Community-centered impact, service, outreach, and empowerment.</li>
-					<li><strong>LeShea Workshops:</strong> Transformational workshops, speaking experiences, and guided learning events.</li>
-				</ul>
+			<section class="grid">
+				<a href="/signature" class="card">
+					<h2>LeShea Signature</h2>
+					<p>Premium executive presence, transformational teaching, signature experiences, and personal brand leadership.</p>
+				</a>
+
+				<a href="/academy" class="card">
+					<h2>LeShea Academy</h2>
+					<p>Classes, professional development, CPR education, learning resources, and future member access.</p>
+				</a>
+
+				<a href="/media" class="card">
+					<h2>LeShea Media</h2>
+					<p>Podcasting, storytelling, digital content, and meaningful conversations that educate and inspire.</p>
+				</a>
+
+				<a href="/foundation" class="card">
+					<h2>LeShea Foundation</h2>
+					<p>Community-centered outreach, empowerment, education, service, and impact initiatives.</p>
+				</a>
 			</section>
 
-			<section>
-				<h2>What We Offer</h2>
-				<ul>
-					<li>Educational classes and learning resources</li>
-					<li>Workshops and speaking experiences</li>
-					<li>Digital products, guides, and workbooks</li>
-					<li>Podcast and media content</li>
-					<li>Community engagement and empowerment initiatives</li>
-				</ul>
+			<section class="feature">
+				<h2>Services & Experiences</h2>
+				<div class="service-list">
+					<p>CPR & health education classes</p>
+					<p>Speaking engagements</p>
+					<p>Workshops and trainings</p>
+					<p>Digital products and resources</p>
+					<p>Notary Public services</p>
+					<p>Community partnerships</p>
+				</div>
 			</section>
 
-			<section>
-				<h2>Our Mission</h2>
+			<section class="closing">
+				<h2>More is coming.</h2>
 				<p>
-					To create spaces, resources, and experiences that help people grow with clarity, confidence, purpose, and excellence.
+					LeShea Group is growing into a full platform for education, signature experiences,
+					media, resources, classes, and community impact.
 				</p>
-			</section>
-
-			<section>
-				<h2>Coming Soon</h2>
-				<p>
-					LeShea Group is growing. Soon, you will be able to explore classes, purchase resources, connect with workshops, and access brand-specific platforms through our family of sites.
-				</p>
+				<a href="/contact">Start an Inquiry</a>
 			</section>
 		</main>
+
 		<Footer />
 	</body>
 </html>
+
+<style>
+	main {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 3rem 1.25rem;
+	}
+
+	.hero {
+		text-align: center;
+		padding: 4rem 1rem 5rem;
+	}
+
+	.logo {
+		max-width: 340px;
+		width: 80%;
+		margin-bottom: 2rem;
+	}
+
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.18em;
+		font-size: 0.8rem;
+		color: #a77a2d;
+		font-weight: 700;
+	}
+
+	h1 {
+		font-size: clamp(2.4rem, 6vw, 5rem);
+		line-height: 1;
+		letter-spacing: -0.05em;
+		margin: 1rem auto;
+		max-width: 900px;
+		color: #111;
+	}
+
+	.hero-text {
+		max-width: 760px;
+		margin: 1.5rem auto;
+		font-size: 1.15rem;
+		line-height: 1.8;
+		color: #333;
+	}
+
+	.buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+	}
+
+	.buttons a,
+	.closing a {
+		background: #111;
+		color: white;
+		padding: 0.85rem 1.25rem;
+		border-radius: 999px;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	.buttons a:nth-child(2) {
+		background: #a77a2d;
+	}
+
+	.buttons a:nth-child(3) {
+		background: white;
+		color: #111;
+		border: 1px solid #ddd;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
+		margin: 2rem 0 4rem;
+	}
+
+	.card {
+		padding: 1.5rem;
+		border: 1px solid #eee;
+		border-radius: 1.25rem;
+		text-decoration: none;
+		color: #111;
+		background: #fff;
+		box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+	}
+
+	.card h2 {
+		font-size: 1.25rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.card p {
+		color: #444;
+		line-height: 1.6;
+	}
+
+	.feature {
+		background: #111;
+		color: white;
+		border-radius: 1.5rem;
+		padding: 3rem;
+		margin: 3rem 0;
+	}
+
+	.feature h2 {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.service-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+	}
+
+	.service-list p {
+		background: rgba(255, 255, 255, 0.08);
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		padding: 1rem;
+		border-radius: 1rem;
+		margin: 0;
+	}
+
+	.closing {
+		text-align: center;
+		padding: 4rem 1rem;
+	}
+
+	.closing h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.closing p {
+		max-width: 700px;
+		margin: 0 auto 2rem;
+		line-height: 1.8;
+		color: #444;
+	}
+
+	@media (max-width: 900px) {
+		.grid,
+		.service-list {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (max-width: 620px) {
+		main {
+			padding: 2rem 1rem;
+		}
+
+		.grid,
+		.service-list {
+			grid-template-columns: 1fr;
+		}
+
+		.feature {
+			padding: 2rem;
+		}
+	}
+</style>
