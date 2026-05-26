@@ -6,6 +6,7 @@ import { SITE_TITLE } from '../consts';
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
+
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/signature">LeShea Signature</HeaderLink>
@@ -26,7 +27,7 @@ import { SITE_TITLE } from '../consts';
 		margin: 0;
 		padding: 0 1em;
 		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 	}
 
 	h2 {
@@ -35,10 +36,10 @@ import { SITE_TITLE } from '../consts';
 		white-space: nowrap;
 	}
 
-	h2 a,
-	h2 a.active {
+	h2 a {
 		text-decoration: none;
 		font-weight: 700;
+		color: #111;
 	}
 
 	nav {
@@ -58,15 +59,14 @@ import { SITE_TITLE } from '../consts';
 
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--black);
+		color: #111;
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 		font-size: 0.9rem;
 	}
 
 	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
+		border-bottom-color: #a77a2d;
 	}
 
 	@media (max-width: 720px) {
@@ -81,22 +81,6 @@ import { SITE_TITLE } from '../consts';
 		nav a {
 			padding: 0.6em 0.4em;
 			font-size: 0.85rem;
-		}
-	}
-</style>		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
 		}
 	}
 </style>
