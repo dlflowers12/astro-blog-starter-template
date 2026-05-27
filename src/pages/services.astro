@@ -1,0 +1,147 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Services | LeShea Group" description="CPR classes, speaking engagements, workshops, digital products, notary public services, and consultations." />
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<section class="intro">
+				<p class="eyebrow">Services & Payments</p>
+				<h1>Book, register, or make a secure payment.</h1>
+				<p>
+					Select the service below that best matches your need. Payments are processed securely through Square.
+				</p>
+			</section>
+
+			<section class="service-grid">
+				<div class="service-card">
+					<h2>CPR Class Registration</h2>
+					<p>Register for upcoming CPR and Basic Life Support education.</p>
+					<a href="https://square.link/u/3lkDF7wy" target="_blank">Register & Pay</a>
+				</div>
+
+				<div class="service-card">
+					<h2>Private Group CPR Training</h2>
+					<p>Schedule CPR training for groups, teams, organizations, or businesses.</p>
+					<a href="https://square.link/u/vgXZgS7a" target="_blank">Book Group Training</a>
+				</div>
+
+				<div class="service-card">
+					<h2>Speaking Engagement Deposit</h2>
+					<p>Submit a deposit for a confirmed speaking engagement, panel, workshop, or event.</p>
+					<a href="https://square.link/u/8TQlOXUs" target="_blank">Pay Speaking Deposit</a>
+				</div>
+
+				<div class="service-card">
+					<h2>Workshop Registration</h2>
+					<p>Reserve your seat for upcoming workshops and transformational learning experiences.</p>
+					<a href="https://square.link/u/rIpwUAog" target="_blank">Register for Workshop</a>
+				</div>
+
+				<div class="service-card">
+					<h2>Notary Public Services</h2>
+					<p>Make a payment for notary services, document-related appointments, or related support.</p>
+					<a href="https://square.link/u/lipvqa4I" target="_blank">Pay for Notary Services</a>
+				</div>
+
+				<div class="service-card">
+					<h2>Digital Product</h2>
+					<p>Purchase digital resources, guides, workbooks, templates, or educational materials.</p>
+					<a href="https://square.link/u/Kqljwqe0" target="_blank">Purchase Digital Product</a>
+				</div>
+
+				<div class="service-card">
+					<h2>Consultation / Custom Payment</h2>
+					<p>Use this option for custom payments, consultations, special arrangements, or invoice-based services.</p>
+					<a href="https://square.link/u/shLEkmN0" target="_blank">Make Custom Payment</a>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 4rem 1.25rem;
+	}
+
+	.intro {
+		max-width: 760px;
+		margin-bottom: 3rem;
+	}
+
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.16em;
+		font-size: 0.78rem;
+		color: #9a762f;
+		font-weight: 700;
+	}
+
+	h1 {
+		font-size: clamp(2.2rem, 5vw, 4rem);
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0.75rem 0 1rem;
+		color: #111;
+	}
+
+	.intro p {
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #444;
+	}
+
+	.service-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.25rem;
+	}
+
+	.service-card {
+		border: 1px solid #ececec;
+		border-radius: 1.1rem;
+		padding: 1.5rem;
+		background: #fff;
+		box-shadow: 0 12px 35px rgba(0, 0, 0, 0.045);
+	}
+
+	.service-card h2 {
+		margin: 0 0 0.75rem;
+		font-size: 1.25rem;
+		color: #111;
+	}
+
+	.service-card p {
+		color: #444;
+		line-height: 1.65;
+		margin-bottom: 1.35rem;
+	}
+
+	.service-card a {
+		display: inline-block;
+		background: #111;
+		color: white;
+		padding: 0.78rem 1.1rem;
+		border-radius: 999px;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 0.92rem;
+	}
+
+	.service-card a:hover {
+		opacity: 0.9;
+	}
+</style>
