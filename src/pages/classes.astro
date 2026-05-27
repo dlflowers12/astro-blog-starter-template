@@ -1,0 +1,83 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Classes | LeShea Group" description="CPR, health education, professional development, and community learning experiences." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Classes</h1>
+			<p>
+				LeShea Group offers practical, professional, and community-centered learning experiences designed to educate, equip, and empower.
+			</p>
+
+			<h2>Current & Future Class Offerings</h2>
+<h2>Current Class Offerings</h2>
+
+<div class="payment-grid">
+	<div class="payment-card">
+		<h3>CPR Class Registration</h3>
+		<p>Register for upcoming CPR and Basic Life Support classes.</p>
+		<a href="https://square.link/u/3lkDF7wy" target="_blank">Register & Pay</a>
+	</div>
+
+	<div class="payment-card">
+		<h3>Private Group CPR Training</h3>
+		<p>Schedule private CPR classes for groups, businesses, organizations, or teams.</p>
+		<a href="https://square.link/u/vgXZgS7a" target="_blank">Book Group Training</a>
+	</div>
+
+	<div class="payment-card">
+		<h3>Workshop Registration</h3>
+		<p>Reserve your space for upcoming workshops and educational experiences.</p>
+		<a href="https://square.link/u/rIpwUAog" target="_blank">Register for Workshop</a>
+	</div>
+</div>
+
+<style>
+	.payment-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	.payment-card {
+		border: 1px solid #e5e5e5;
+		border-radius: 1.25rem;
+		padding: 1.5rem;
+		background: white;
+		box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+	}
+
+	.payment-card h3 {
+		margin-top: 0;
+		margin-bottom: 0.75rem;
+	}
+
+	.payment-card p {
+		line-height: 1.6;
+		color: #444;
+		margin-bottom: 1.5rem;
+	}
+
+	.payment-card a {
+		display: inline-block;
+		background: #111;
+		color: white;
+		padding: 0.8rem 1.2rem;
+		border-radius: 999px;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	.payment-card a:hover {
+		opacity: 0.9;
+	}
+</style>
