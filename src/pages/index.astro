@@ -19,40 +19,38 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 				<p class="eyebrow">Education • Media • Leadership • Community Impact</p>
 
-				<h1>Building platforms for growth, purpose, and excellence.</h1>
+				<h1>Building refined spaces for growth, learning, and purpose.</h1>
 
 				<p class="hero-text">
-					LeShea Group is a purpose-driven brand house created to educate, equip, inspire,
-					and build meaningful experiences through classes, media, workshops, speaking,
-					community impact, and signature resources.
+					LeShea Group is a purpose-driven brand house offering education, signature experiences,
+					classes, media, speaking, notary services, digital resources, and community-centered impact.
 				</p>
 
 				<div class="buttons">
-					<a href="/classes">Explore Classes</a>
-					<a href="/speaking">Book Speaking</a>
-					<a href="/contact">Contact Us</a>
+					<a href="/services">Explore Services</a>
+					<a href="/contact">Start an Inquiry</a>
 				</div>
 			</section>
 
 			<section class="grid">
 				<a href="/signature" class="card">
 					<h2>LeShea Signature</h2>
-					<p>Premium executive presence, transformational teaching, signature experiences, and personal brand leadership.</p>
+					<p>Executive presence, transformational teaching, signature experiences, and purpose-driven leadership.</p>
+				</a>
+
+				<a href="/services" class="card">
+					<h2>Classes & Services</h2>
+					<p>CPR classes, workshops, speaking deposits, notary services, consultations, and digital products.</p>
 				</a>
 
 				<a href="/academy" class="card">
 					<h2>LeShea Academy</h2>
-					<p>Classes, professional development, CPR education, learning resources, and future member access.</p>
+					<p>Professional education, learning resources, training experiences, and future member access.</p>
 				</a>
 
 				<a href="/media" class="card">
 					<h2>LeShea Media</h2>
-					<p>Podcasting, storytelling, digital content, and meaningful conversations that educate and inspire.</p>
-				</a>
-
-				<a href="/foundation" class="card">
-					<h2>LeShea Foundation</h2>
-					<p>Community-centered outreach, empowerment, education, service, and impact initiatives.</p>
+					<p>Storytelling, podcasting, meaningful conversations, and digital content that educates and inspires.</p>
 				</a>
 			</section>
 
@@ -69,12 +67,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			</section>
 
 			<section class="closing">
-				<h2>More is coming.</h2>
+				<h2>Purposeful. Professional. Built with excellence.</h2>
 				<p>
-					LeShea Group is growing into a full platform for education, signature experiences,
-					media, resources, classes, and community impact.
+					LeShea Group is growing into a refined platform for education, media, resources,
+					classes, speaking, service, and community impact.
 				</p>
-				<a href="/contact">Start an Inquiry</a>
+				<a href="/services">View Services</a>
 			</section>
 		</main>
 
@@ -84,50 +82,51 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <style>
 	main {
-		max-width: 1200px;
+		max-width: 1180px;
 		margin: 0 auto;
 		padding: 3rem 1.25rem;
 	}
 
 	.hero {
 		text-align: center;
-		padding: 4rem 1rem 5rem;
+		padding: 4rem 1rem 4.5rem;
 	}
 
 	.logo {
-		max-width: 340px;
-		width: 80%;
+		max-width: 300px;
+		width: 78%;
 		margin-bottom: 2rem;
 	}
 
 	.eyebrow {
 		text-transform: uppercase;
-		letter-spacing: 0.18em;
-		font-size: 0.8rem;
-		color: #a77a2d;
+		letter-spacing: 0.17em;
+		font-size: 0.76rem;
+		color: #9a762f;
 		font-weight: 700;
 	}
 
 	h1 {
-		font-size: clamp(2.4rem, 6vw, 5rem);
-		line-height: 1;
-		letter-spacing: -0.05em;
+		font-size: clamp(2.2rem, 5.2vw, 4.45rem);
+		line-height: 1.05;
+		letter-spacing: -0.045em;
 		margin: 1rem auto;
-		max-width: 900px;
+		max-width: 920px;
 		color: #111;
+		font-weight: 700;
 	}
 
 	.hero-text {
 		max-width: 760px;
-		margin: 1.5rem auto;
-		font-size: 1.15rem;
+		margin: 1.35rem auto;
+		font-size: 1.08rem;
 		line-height: 1.8;
-		color: #333;
+		color: #3d3d3d;
 	}
 
 	.buttons {
 		display: flex;
-		gap: 1rem;
+		gap: 0.85rem;
 		justify-content: center;
 		flex-wrap: wrap;
 		margin-top: 2rem;
@@ -135,19 +134,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 	.buttons a,
 	.closing a {
-		background: #111;
+		background: #222;
 		color: white;
-		padding: 0.85rem 1.25rem;
+		padding: 0.82rem 1.2rem;
 		border-radius: 999px;
 		text-decoration: none;
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 	.buttons a:nth-child(2) {
-		background: #a77a2d;
-	}
-
-	.buttons a:nth-child(3) {
 		background: white;
 		color: #111;
 		border: 1px solid #ddd;
@@ -157,40 +152,42 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1rem;
-		margin: 2rem 0 4rem;
+		margin: 2rem 0 3.5rem;
 	}
 
 	.card {
-		padding: 1.5rem;
-		border: 1px solid #eee;
-		border-radius: 1.25rem;
+		padding: 1.45rem;
+		border: 1px solid #eeeeee;
+		border-radius: 1.15rem;
 		text-decoration: none;
 		color: #111;
 		background: #fff;
-		box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+		box-shadow: 0 12px 32px rgba(0, 0, 0, 0.045);
 	}
 
 	.card h2 {
-		font-size: 1.25rem;
-		margin-bottom: 0.75rem;
+		font-size: 1.18rem;
+		margin-bottom: 0.7rem;
 	}
 
 	.card p {
 		color: #444;
-		line-height: 1.6;
+		line-height: 1.65;
 	}
 
 	.feature {
-		background: #111;
-		color: white;
+		background: #f8f8f8;
+		color: #111;
 		border-radius: 1.5rem;
 		padding: 3rem;
 		margin: 3rem 0;
+		border: 1px solid #ececec;
 	}
 
 	.feature h2 {
-		font-size: 2rem;
+		font-size: 1.9rem;
 		margin-bottom: 1.5rem;
+		color: #111;
 	}
 
 	.service-list {
@@ -200,11 +197,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	}
 
 	.service-list p {
-		background: rgba(255, 255, 255, 0.08);
-		border: 1px solid rgba(255, 255, 255, 0.15);
+		background: white;
+		border: 1px solid #e9e9e9;
 		padding: 1rem;
 		border-radius: 1rem;
 		margin: 0;
+		color: #333;
+		box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 	}
 
 	.closing {
@@ -213,8 +212,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	}
 
 	.closing h2 {
-		font-size: 2.5rem;
+		font-size: clamp(2rem, 4vw, 3rem);
+		line-height: 1.1;
 		margin-bottom: 1rem;
+		color: #111;
 	}
 
 	.closing p {
